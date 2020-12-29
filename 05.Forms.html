@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="name" id="name">
+        </div>
+        <label for="age">Age:</label>
+        <div>
+            <input type="number" name="age" id="age">
+        </div>
+        <label for="email">Email ID :</label>
+        <div>
+            <input type="email" name="email" id="email">
+        </div>
+        <label for="brand">Clothing Brands You have heard of:</label>
+        <div>
+            UCB<input type="checkbox" name="brand" id="brand">
+            Adidas<input type="checkbox" name="brand" id="brand" checked>
+            Puma<input type="checkbox" name="brand" id="brand">
+        </div>
+        <label for="describe">Describe your company:</label>
+        <div>
+            <textarea name="describe" id="describe" cols="30" rows="10"></textarea>
+        </div>
+        <label for="gender">Gender:</label>
+        <div>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" id="male" checked>
+            <label for="female">Female:</label><input type="radio" name="gender id=" female">
+        </div>
+        <label for="ddmenu">Favorite Tech Companies:</label>
+        <div>
+            <select name="ddmenu" id="ddmenu">
+                <option value="dell">Dell</option>
+                <option value="lenovo">Lenovo</option>
+                <option value="zebronics" selected>Zebronics</option>
+                <option value="logitech">Logitech</option>
+            </select>
+        </div>
+
+        <!-- 1st Way -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        <!-- 2nd Way -->
+        <div><button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
